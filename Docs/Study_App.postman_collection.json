@@ -1,0 +1,416 @@
+{
+	"info": {
+		"_postman_id": "d2e1c436-4b5f-45c4-9949-3e8434d73396",
+		"name": "Study_App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users.list",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb2RpZ28iOjEsIm5hbWUiOiJBbGVqYW5kcm8iLCJsYXN0X25hbWUiOiJMZXpjYW5vIiwiZW1haWwiOiJhbGVkYW5pZWx4aWFvbWlAZ21haWwuY29tIiwiYXZhdGFyIjoiZ29rdSIsImlhdCI6MTY4NDUxMjcyN30.2bo5O64DqUlXcjDKjqveoV0SigdObHyjWu8ezNv1JNA",
+						"type": "default"
+					}
+				],
+				"url": "http://localhost:3000/users/list"
+			},
+			"response": []
+		},
+		{
+			"name": "users.search.code",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb2RpZ28iOjEsIm5hbWUiOiJBbGVqYW5kcm8iLCJsYXN0X25hbWUiOiJMZXpjYW5vIiwiZW1haWwiOiJhbGVkYW5pZWx4aWFvbWlAZ21haWwuY29tIiwiYXZhdGFyIjoiZ29rdSIsImlhdCI6MTY4NDUxMjcyN30.2bo5O64DqUlXcjDKjqveoV0SigdObHyjWu8ezNv1JNA",
+						"type": "default"
+					}
+				],
+				"url": "http://localhost:3000/users/1"
+			},
+			"response": []
+		},
+		{
+			"name": "users.delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb2RpZ28iOjEsIm5hbWUiOiJBbGVqYW5kcm8iLCJsYXN0X25hbWUiOiJMZXpjYW5vIiwiZW1haWwiOiJhbGVkYW5pZWx4aWFvbWlAZ21haWwuY29tIiwiYXZhdGFyIjoiZ29rdSIsImlhdCI6MTY4NDUxMjcyN30.2bo5O64DqUlXcjDKjqveoV0SigdObHyjWu8ezNv1JNA",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/users/delete/2"
+			},
+			"response": []
+		},
+		{
+			"name": "users.update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb2RpZ28iOjEsIm5hbWUiOiJBbGVqYW5kcm8iLCJsYXN0X25hbWUiOiJMZXpjYW5vIiwiZW1haWwiOiJhbGVkYW5pZWx4aWFvbWlAZ21haWwuY29tIiwiYXZhdGFyIjoiZ29rdSIsImlhdCI6MTY4NDUxMjcyN30.2bo5O64DqUlXcjDKjqveoV0SigdObHyjWu8ezNv1JNA",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":3 ,\r\n    \"name\": \"kokun\",\r\n    \"last_name\": \"Test\",\r\n    \"avatar\":null,\r\n    \"email\":\"nuevouser@gmail.com\",\r\n    \"password\":\"123\",\r\n    \"deleted\":false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/users/update"
+			},
+			"response": []
+		},
+		{
+			"name": "users.login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"aledanielxiaomi@gmail.com\",\r\n    \"password\": \"ale2015xD\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/users/login"
+			},
+			"response": []
+		},
+		{
+			"name": "users.logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb2RpZ28iOjEsIm5hbWUiOiJBbGVqYW5kcm8iLCJsYXN0X25hbWUiOiJMZXpjYW5vIiwiZW1haWwiOiJhbGVkYW5pZWx4aWFvbWlAZ21haWwuY29tIiwiYXZhdGFyIjoiZ29rdSIsImlhdCI6MTY4NDUzOTU4Nn0.83AHfSZuS0MK7q2eM40vsQnL1DHMQ-olbYBNvMaeeSo",
+						"type": "default"
+					}
+				],
+				"url": "http://localhost:3000/users/logout"
+			},
+			"response": []
+		},
+		{
+			"name": "themes.list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb2RpZ28iOjEsIm5hbWUiOiJBbGVqYW5kcm8iLCJsYXN0X25hbWUiOiJMZXpjYW5vIiwiZW1haWwiOiJhbGVkYW5pZWx4aWFvbWlAZ21haWwuY29tIiwiYXZhdGFyIjoiZ29rdSIsImlhdCI6MTY4NDUxMjcyN30.2bo5O64DqUlXcjDKjqveoV0SigdObHyjWu8ezNv1JNA",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/themes/list?filtro=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"themes",
+						"list"
+					],
+					"query": [
+						{
+							"key": "filtro",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "themes.update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb2RpZ28iOjEsIm5hbWUiOiJBbGVqYW5kcm8iLCJsYXN0X25hbWUiOiJMZXpjYW5vIiwiZW1haWwiOiJhbGVkYW5pZWx4aWFvbWlAZ21haWwuY29tIiwiYXZhdGFyIjoiZ29rdSIsImlhdCI6MTY4NDUxMjcyN30.2bo5O64DqUlXcjDKjqveoV0SigdObHyjWu8ezNv1JNA",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"create_date\": \"2022-03-03\",\r\n     \"topic_id\": 1 ,\r\n     \"name\" : \"Unidad 5\",\r\n     \"description\": \"Todos los contenidos de unidad 1\" ,\r\n     \"keywords\": \"1\" ,\r\n     \"avatar\": \"goku\",\r\n     \"owner_user_id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/themes/update"
+			},
+			"response": []
+		},
+		{
+			"name": "themes.delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb2RpZ28iOjEsIm5hbWUiOiJBbGVqYW5kcm8iLCJsYXN0X25hbWUiOiJMZXpjYW5vIiwiZW1haWwiOiJhbGVkYW5pZWx4aWFvbWlAZ21haWwuY29tIiwiYXZhdGFyIjoiZ29rdSIsImlhdCI6MTY4NDUxMjcyN30.2bo5O64DqUlXcjDKjqveoV0SigdObHyjWu8ezNv1JNA",
+						"type": "default"
+					}
+				],
+				"url": "http://localhost:3000/themes/delete/3"
+			},
+			"response": []
+		},
+		{
+			"name": "themes.search.code",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb2RpZ28iOjEsIm5hbWUiOiJBbGVqYW5kcm8iLCJsYXN0X25hbWUiOiJMZXpjYW5vIiwiZW1haWwiOiJhbGVkYW5pZWx4aWFvbWlAZ21haWwuY29tIiwiYXZhdGFyIjoiZ29rdSIsImlhdCI6MTY4NDUxMjcyN30.2bo5O64DqUlXcjDKjqveoV0SigdObHyjWu8ezNv1JNA",
+						"type": "default"
+					}
+				],
+				"url": "http://localhost:3000/themes/1"
+			},
+			"response": []
+		},
+		{
+			"name": "topics.list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb2RpZ28iOjEsIm5hbWUiOiJBbGVqYW5kcm8iLCJsYXN0X25hbWUiOiJMZXpjYW5vIiwiZW1haWwiOiJhbGVkYW5pZWx4aWFvbWlAZ21haWwuY29tIiwiYXZhdGFyIjoiZ29rdSIsImlhdCI6MTY4NDUzOTgyOH0.jM8wx8KANS9eeaX5S3B6QDrr9A8Nb2CNVlTidzXAh74",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/topics/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"topics",
+						"list"
+					],
+					"query": [
+						{
+							"key": "Aut",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "topics.search.code",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb2RpZ28iOjEsIm5hbWUiOiJBbGVqYW5kcm8iLCJsYXN0X25hbWUiOiJMZXpjYW5vIiwiZW1haWwiOiJhbGVkYW5pZWx4aWFvbWlAZ21haWwuY29tIiwiYXZhdGFyIjoiZ29rdSIsImlhdCI6MTY4NDUzOTgyOH0.jM8wx8KANS9eeaX5S3B6QDrr9A8Nb2CNVlTidzXAh74",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/topics/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"topics",
+						"1"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "topics.update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb2RpZ28iOjEsIm5hbWUiOiJBbGVqYW5kcm8iLCJsYXN0X25hbWUiOiJMZXpjYW5vIiwiZW1haWwiOiJhbGVkYW5pZWx4aWFvbWlAZ21haWwuY29tIiwiYXZhdGFyIjoiZ29rdSIsImlhdCI6MTY4NDUzOTgyOH0.jM8wx8KANS9eeaX5S3B6QDrr9A8Nb2CNVlTidzXAh74",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5,\r\n    \"create_date\":\"2023-03-17\",\r\n    \"name\": \"LENGUAJE 5\" ,\r\n    \"topic_id\": null ,\r\n    \"order\" : 2,\r\n    \"priority\": 1 , \r\n    \"color\" : \"#53563\",\r\n    \"owner_user_id\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/topics/update"
+			},
+			"response": []
+		},
+		{
+			"name": "topics.delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb2RpZ28iOjEsIm5hbWUiOiJBbGVqYW5kcm8iLCJsYXN0X25hbWUiOiJMZXpjYW5vIiwiZW1haWwiOiJhbGVkYW5pZWx4aWFvbWlAZ21haWwuY29tIiwiYXZhdGFyIjoiZ29rdSIsImlhdCI6MTY4NDUxMjcyN30.2bo5O64DqUlXcjDKjqveoV0SigdObHyjWu8ezNv1JNA",
+						"type": "default"
+					}
+				],
+				"url": "http://localhost:3000/topics/delete/2"
+			},
+			"response": []
+		},
+		{
+			"name": "themes.properties.list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb2RpZ28iOjEsIm5hbWUiOiJBbGVqYW5kcm8iLCJsYXN0X25hbWUiOiJMZXpjYW5vIiwiZW1haWwiOiJhbGVkYW5pZWx4aWFvbWlAZ21haWwuY29tIiwiYXZhdGFyIjoiZ29rdSIsImlhdCI6MTY4NDUxMjcyN30.2bo5O64DqUlXcjDKjqveoV0SigdObHyjWu8ezNv1JNA",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/themes-properties/list?filtro=t",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"themes-properties",
+						"list"
+					],
+					"query": [
+						{
+							"key": "filtro",
+							"value": "t"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "themes.properties.update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb2RpZ28iOjEsIm5hbWUiOiJBbGVqYW5kcm8iLCJsYXN0X25hbWUiOiJMZXpjYW5vIiwiZW1haWwiOiJhbGVkYW5pZWx4aWFvbWlAZ21haWwuY29tIiwiYXZhdGFyIjoiZ29rdSIsImlhdCI6MTY4NDUxMjcyN30.2bo5O64DqUlXcjDKjqveoV0SigdObHyjWu8ezNv1JNA",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"theme_id\":1,\r\n    \"property_name\": \"Visited\",\r\n    \"property_value\": 50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/themes-properties/update"
+			},
+			"response": []
+		},
+		{
+			"name": "themes.properties.search.code",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb2RpZ28iOjEsIm5hbWUiOiJBbGVqYW5kcm8iLCJsYXN0X25hbWUiOiJMZXpjYW5vIiwiZW1haWwiOiJhbGVkYW5pZWx4aWFvbWlAZ21haWwuY29tIiwiYXZhdGFyIjoiZ29rdSIsImlhdCI6MTY4NDUxMjcyN30.2bo5O64DqUlXcjDKjqveoV0SigdObHyjWu8ezNv1JNA",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/themes-properties?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"themes-properties"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "themes.properties.delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb2RpZ28iOjEsIm5hbWUiOiJBbGVqYW5kcm8iLCJsYXN0X25hbWUiOiJMZXpjYW5vIiwiZW1haWwiOiJhbGVkYW5pZWx4aWFvbWlAZ21haWwuY29tIiwiYXZhdGFyIjoiZ29rdSIsImlhdCI6MTY4NDUxMjcyN30.2bo5O64DqUlXcjDKjqveoV0SigdObHyjWu8ezNv1JNA",
+						"type": "default"
+					}
+				],
+				"url": "http://localhost:3000/themes-properties/delete/2"
+			},
+			"response": []
+		}
+	]
+}
